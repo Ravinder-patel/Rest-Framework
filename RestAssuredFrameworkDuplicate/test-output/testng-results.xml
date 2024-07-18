@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="6" passed="2" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-18T13:01:00 IST" name="Suite" finished-at="2024-07-18T13:01:04 IST" duration-ms="3553">
+    <groups>
+    </groups>
+    <test started-at="2024-07-18T13:01:00 IST" name="Test" finished-at="2024-07-18T13:01:04 IST" duration-ms="3553">
+      <class name="BaseApiUsage_17_3.Project_17_3">
+        <test-method signature="addSingleProjectWithCreated()[pri:0, instance:BaseApiUsage_17_3.Project_17_3@2767e23c]" started-at="2024-07-18T13:01:03 IST" name="addSingleProjectWithCreated" finished-at="2024-07-18T13:01:04 IST" duration-ms="795" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.sql.ResultSet.next()" because "result" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.sql.ResultSet.next()" because "result" is null
+at BaseApiUsage_17_3.Project_17_3.addSingleProjectWithCreated(Project_17_3.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSingleProjectWithCreated -->
+        <test-method signature="addDuplicateProject()[pri:0, instance:BaseApiUsage_17_3.Project_17_3@2767e23c]" started-at="2024-07-18T13:01:04 IST" name="addDuplicateProject" finished-at="2024-07-18T13:01:04 IST" depends-on-methods="BaseApiUsage_17_3.Project_17_3.addSingleProjectWithCreated" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BaseApiUsage_17_3.Project_17_3.addDuplicateProject() on instance BaseApiUsage_17_3.Project_17_3@2767e23c depends on not successfully finished methods 
+[BaseApiUsage_17_3.Project_17_3.addSingleProjectWithCreated() on instance BaseApiUsage_17_3.Project_17_3@2767e23c]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BaseApiUsage_17_3.Project_17_3.addDuplicateProject() on instance BaseApiUsage_17_3.Project_17_3@2767e23c depends on not successfully finished methods 
+[BaseApiUsage_17_3.Project_17_3.addSingleProjectWithCreated() on instance BaseApiUsage_17_3.Project_17_3@2767e23c]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDuplicateProject -->
+      </class> <!-- BaseApiUsage_17_3.Project_17_3 -->
+      <class name="BaseApiUsage_17_3.Employee_17_3">
+        <test-method is-config="true" signature="configBSuite()[pri:0, instance:BaseApiUsage_17_3.Employee_17_3@273444fe]" started-at="2024-07-18T13:00:58 IST" name="configBSuite" finished-at="2024-07-18T13:01:00 IST" duration-ms="1636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBSuite -->
+        <test-method signature="addEmploye()[pri:0, instance:BaseApiUsage_17_3.Employee_17_3@273444fe]" started-at="2024-07-18T13:01:00 IST" name="addEmploye" finished-at="2024-07-18T13:01:02 IST" duration-ms="2361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmploye -->
+        <test-method signature="addEmployeWithOutEmail()[pri:0, instance:BaseApiUsage_17_3.Employee_17_3@273444fe]" started-at="2024-07-18T13:01:02 IST" name="addEmployeWithOutEmail" finished-at="2024-07-18T13:01:03 IST" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeWithOutEmail -->
+        <test-method is-config="true" signature="configASuite()[pri:0, instance:BaseApiUsage_17_3.Employee_17_3@273444fe]" started-at="2024-07-18T13:01:04 IST" name="configASuite" finished-at="2024-07-18T13:01:04 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configASuite -->
+      </class> <!-- BaseApiUsage_17_3.Employee_17_3 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

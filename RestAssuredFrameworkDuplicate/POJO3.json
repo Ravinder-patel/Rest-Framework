@@ -1,0 +1,14 @@
+[ {
+  "value" : [ {
+    "user" : [ {
+      "id" : "1324",
+      "value" : "Jerry"
+    } ],
+    "mansger" : [ {
+      "id" : "56789",
+      "value" : "ENG"
+    } ],
+    "pinName" : "PIN11111"
+  } ],
+  "itemConfigId" : "itemConfig#123"
+} ]
